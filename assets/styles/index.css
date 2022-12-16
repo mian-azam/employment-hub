@@ -15,8 +15,8 @@ main {
     background: linear-gradient(to right,
             rgba(240, 240, 233, 0.8) 0%,
             rgba(240, 240, 233, 0.8) 50%,
-            rgba(225, 218, 162, 0.8) 50%,
-            rgba(225, 218, 162, 0.8) 100%);
+            rgba(75, 0, 130, 0.8) 50%,
+            rgba(75, 0, 130, 0.8) 100%);
     display: grid;
     place-items: center;
 }
@@ -48,7 +48,7 @@ main {
     height: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #8fa9b9;
+    background-color: rgba(240, 240, 233, 0.8);
     display: grid;
     place-items: center;
 }
@@ -60,12 +60,12 @@ span {
 }
 
 h1 {
-    color: #f0f2f4
+    color: #22282f;
 }
 
 p {
     padding: 5px;
-    color: #f0f2f4;
+    color: #22282f;
     font-size: 20px;
 }
 
@@ -83,7 +83,7 @@ input[type="email"] {
     width: 100%;
     height: 48px;
     padding: 0 15px;
-    border: 1px solid rgb(214, 110, 110);
+    border: 1px solid #820078;
     background-color: #f0f2f4;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
@@ -112,7 +112,7 @@ input[type="button"] {
     height: 46px;
     margin-top: 10px;
     text-align: center;
-    background-color: rgb(222, 80, 80);
+    background-color: #820078;
     border: 1px solid #f0f2f4;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
@@ -120,12 +120,12 @@ input[type="button"] {
     font-weight: 600;
     letter-spacing: 0.2px;
     transition: all 0.25s ease-in-out;
-    color: #22282f;
+    color: #f0f2f4;
     cursor: pointer;
 }
 
 
 
 input[type="button"]:hover {
-    background-color: red;
+    background-color: #0a0082;
 }
