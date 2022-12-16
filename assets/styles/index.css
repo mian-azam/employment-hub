@@ -1,0 +1,131 @@
+@import url(./reset.css);
+
+body {
+    background-color: rgba(128, 136, 143, 0.5);
+}
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,
+            rgba(240, 240, 233, 0.8) 0%,
+            rgba(240, 240, 233, 0.8) 50%,
+            rgba(225, 218, 162, 0.8) 50%,
+            rgba(225, 218, 162, 0.8) 100%);
+    display: grid;
+    place-items: center;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.background {
+    height: 70%;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #f0f2f4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: url(../media/login-baner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #8fa9b9;
+    display: grid;
+    place-items: center;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+span {
+    color: rgb(181, 55, 55);
+}
+
+h1 {
+    color: #f0f2f4
+}
+
+p {
+    padding: 5px;
+    color: #f0f2f4;
+    font-size: 20px;
+}
+
+form {
+    display: grid;
+    place-items: center;
+}
+
+.buttons {
+    display: inline;
+}
+
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid rgb(214, 110, 110);
+    background-color: #f0f2f4;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #1a1d28;
+    text-align: left;
+}
+
+
+
+form input+input {
+    margin-top: 15px;
+}
+
+
+
+input:focus {
+    border: 1px solid rgba(75, 73, 73, 0.8);
+}
+
+
+
+input[type="button"] {
+    width: 80px;
+    height: 46px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(222, 80, 80);
+    border: 1px solid #f0f2f4;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    color: #22282f;
+    cursor: pointer;
+}
+
+
+
+input[type="button"]:hover {
+    background-color: red;
+}

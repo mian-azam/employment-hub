@@ -1,0 +1,416 @@
+@import url(./reset.css);
+
+body {
+    background-color: rgba(128, 136, 143, 0.5);
+}
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #22282f;
+}
+
+.links a:hover {
+    box-shadow: 0px 1px 0px #22282f;
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+body {
+    background-color: rgba(225, 218, 162, 0.8);
+}
+
+header {
+    height: 56px;
+    width: 100%;
+    background-color: rgba(240, 240, 233, 0.8);
+
+}
+
+.header {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+}
+
+.comp-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 5px;
+    border-right: 1.5px solid rgb(200, 195, 195);
+}
+
+.comp-info h1 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 5px;
+    place-items: center;
+    border-right: 1.5px solid rgb(200, 195, 195);
+}
+
+
+
+.icons-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+    place-items: center;
+    border-right: 1.5px solid rgb(200, 195, 195);
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fa-bell {
+    color: rgb(255, 200, 0);
+}
+
+.fa-message {
+    color: rgb(0, 153, 255);
+}
+
+.help {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+    place-items: center;
+}
+
+.fa-gear {
+    color: rgb(32, 30, 30);
+}
+
+.help p {
+    font-size: 20px;
+}
+
+/*---------------------------------------------------------------------------------*/
+.wrapper {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1.1fr 2.8fr 1.1fr;
+    gap: 10px;
+}
+
+/*---------------------------------------------------------------------------------*/
+.bio {
+    width: 100%;
+    height: 460px;
+    background-color: #f2f4f6;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+}
+
+.pic-div {
+    width: 80%;
+    height: 170px;
+    border-radius: 50%;
+    margin-top: 10px;
+    background: url(../media/my-img.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.my-info-div {
+    width: 100%;
+    border-bottom: 1.5px solid rgb(200, 195, 195);
+    display: grid;
+    place-items: center;
+
+}
+
+button {
+    width: 100px;
+    height: 46px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(222, 80, 80);
+    border: 1px solid #f0f2f4;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    color: #22282f;
+    cursor: pointer;
+}
+
+button+button {
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+
+.ex-links p {
+    margin-top: 5px;
+    color: grey;
+    font-size: 18px;
+}
+
+.post-body p {
+    padding: 5px;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+.posts {
+    width: 100%;
+}
+
+.upload-post {
+    font-size: 20px;
+    width: 100%;
+    height: 220px;
+    padding: 10px;
+    background-color: #f2f4f6;
+    border-radius: 10px;
+}
+
+.textarea {
+    width: 100%;
+    height: 70%;
+    font-size: 22px;
+    color: #22282f;
+    background-color: #f2f4f6;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.post-btn {
+    width: 100%;
+    display: flex;
+}
+
+.fa-image {
+    width: 20%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 38px;
+}
+
+.btn {
+    width: 80%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.post-one {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    height: fit-content;
+    background-color: #f2f4f6;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.head {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 10px;
+}
+
+.post-head {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+}
+
+.post-body p {
+    font-size: 20px;
+
+}
+
+.post-body h2 {
+    padding: 5px;
+}
+
+.pic {
+    width: 100%;
+    height: 360px;
+    background: url(../media/job-fair.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    margin-top: 10px;
+
+}
+
+.icons {
+    margin: 30px;
+    margin-left: 5px;
+    display: flex;
+}
+
+.icons i+i {
+    margin-left: 20px;
+}
+
+.fa-thumbs-up {
+    color: rgba(64, 64, 219, 0.7);
+}
+
+.user-pic {
+    display: flex;
+    margin: 20px 5px;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.user-pic .para {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pict {
+    width: 100%;
+    height: 400px;
+    background: url(../media/skip.png);
+    margin-top: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    margin-right: 10px;
+    margin: 0px 5px;
+}
+
+/*---------------------------------------------------------------------------------*/
+.people {
+    background-color: #f2f4f6;
+    border-radius: 10px;
+}
+
+.people h2 {
+    font-size: 23px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+
+
+.check {
+    width: 40px;
+    height: 40px;
+}
+
+.parent {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 10px;
+    border-bottom: 1.5px solid rgb(200, 195, 195);
+}
+
+.picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.info {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-para {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 96px;
+    background-color: rgba(240, 240, 233, 0.8);
+    bottom: 0;
+}
+
+.footer-nav {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-10px);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul li {
+    color: #2d2d2d;
+    list-style: none;
+}
+
+footer ul li+li {
+    margin-left: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--app-light-grey);
+    transition: color 0.25s ease-in-out;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+.github:hover {
+    color: #1664d2;
+}
+
+.linkedin:hover {
+    color: #a80e2a;
+}
